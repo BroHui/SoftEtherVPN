@@ -10749,15 +10749,7 @@ void SiGetCurrentRegion(CEDAR *c, char *region, UINT region_size)
 // 
 bool SiIsEnterpriseFunctionsRestrictedOnOpenSource(CEDAR *c)
 {
-	char region[128];
-	bool ret = false;
-	// Validate arguments
-	if (c == NULL)
-	{
-		return false;
-	}
-
-	return ret;
+	return false;
 }
 
 // Update the current region

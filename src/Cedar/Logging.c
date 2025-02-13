@@ -153,7 +153,8 @@ SLOG *NewSysLog(char *hostname, UINT port, IP *ip)
 	SLOG *g = ZeroMalloc(sizeof(SLOG));
 
 	g->lock = NewLock();
-	g->Udp = NewUDPEx2(0, false, ip);
+	// g->Udp = NewUDPEx2(0, false, ip);
+	g->Udp = NewUDP(0);
 
 	SetSysLog(g, hostname, port);
 
